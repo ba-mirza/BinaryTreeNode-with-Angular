@@ -15,17 +15,17 @@ export class App {
 
   public root = new BinaryTreeNode();
 
-  public get template(): any {
+  public get binaryTreeNode(): any {
     return this.root;
   }
 
-  private set template(value: number) {
+  private set binaryTreeNode(value: number) {
     this.root.push(value);
   }
 
   public newRandNum(): void {
     const value = Math.floor(Math.random() * 201) - 100;
-    this.template = value;
+    this.binaryTreeNode = value;
   }
 }
 
